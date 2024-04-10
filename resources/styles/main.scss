@@ -1,0 +1,43 @@
+// Default
+//@import "../libs/normalize-8.0.1";
+@import "global/_fonts"; // шрифты
+@import "global/_variables"; // переменные
+@import "global/_mixins"; // миксины
+@import "global/_global"; // глобальные стили
+
+// Template
+@import "templates/button";
+@import "templates/form";
+@import "templates/page";
+@import "templates/header";
+@import "templates/footer";
+@import "templates/page";
+@import "templates/intro";
+@import "templates/authorization";
+@import "templates/login";
+@import "templates/post";
+@import "templates/post-photo";
+@import "templates/post-video";
+@import "templates/post-text";
+@import "templates/post-quote";
+@import "templates/post-link";
+@import "templates/filters";
+@import "templates/feed";
+@import "templates/promo";
+@import "templates/messages";
+@import "templates/comments";
+@import "templates/search";
+@import "templates/popular";
+@import "templates/sorting";
+@import "templates/post-details";
+@import "templates/user";
+@import "templates/profile";
+@import "templates/tabs";
+@import "templates/post-mini";
+@import "templates/registration";
+@import "templates/adding-post";
+@import "templates/modal";
+
+// Plugins
+/* @import "../libs/slider/slider" */
+

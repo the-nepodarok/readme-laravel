@@ -1,0 +1,43 @@
+.authorization {
+  width: 400px;
+  padding: 47px 40px 45px 40px;
+  background-color: $white;
+  border-radius: 30px;
+}
+
+.authorization__input-wrapper {
+  margin-bottom: 9px;
+}
+
+.authorization__input {
+  width: 100%;
+  padding: 16px 50px 15px 21px;
+}
+
+.authorization__recovery {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 27px;
+  padding-right: 3px;
+  font-size: 17px;
+  color: $main;
+  text-align: center;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.authorization__submit {
+  width: 100%;
+  padding: 21px 20px 19px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}

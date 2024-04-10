@@ -1,0 +1,141 @@
+.button {
+  @include button-reset;
+  display: inline-block;
+  font: inherit;
+  text-align: center;
+  word-break: break-word;
+  word-wrap: wrap;
+  overflow-wrap: break-word;
+  transition: color 0.3s, background-color 0.3s, border 0.3s, opacity 0.3s;
+  outline: none;
+
+  &--main {
+    font-size: 17px;
+    font-weight: 500;
+    color: $white;
+    background-color: $main-interactive;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+
+  &--main:hover,
+  &--main:focus {
+    background-color: $main-interactive-hover;
+  }
+
+  &--main:active {
+    color: rgba($white, 0.3);
+  }
+
+  &--green {
+    font-size: 17px;
+    font-weight: 500;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $green;
+
+    &:hover,
+    &:focus {
+      background-color: #5aca00;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--gray {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba($main, 0.5);
+    text-transform: uppercase;
+    background-color: rgba($gray, 0.6);
+    border-radius: 10px;
+
+    &:hover,
+    &:focus {
+      color: rgba($main, 0.7);
+      background-color: rgba(#b9c3df, 0.6);
+    }
+
+    &:active {
+      color: rgba($main, 0.3);
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 2px solid rgba($white, 0.3);
+    border-radius: 21px;
+  }
+
+  &--transparent:hover,
+  &--transparent:focus {
+    border-color: $white;
+  }
+
+  &--transparent:active {
+    border-color: $white;
+    opacity: 0.3;
+  }
+
+  &--quartz {
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    color: $white;
+    background-color: $quartz;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background-color: #777b8a;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--video {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $main;
+
+    &:hover,
+    &:focus {
+      background-color: #1f2737;
+    }
+
+    &:hover .button__close-icon,
+    &:focus .button__close-icon {
+      transform: rotate(180deg);
+    }
+
+    &:active .button__close-icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.button__close-icon {
+  fill: $white;
+  transition: opacity 0.3s, transform 0.3s;
+}
